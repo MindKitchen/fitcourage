@@ -1,0 +1,7 @@
+<template name="runs">
+<ul class="fc-runs">
+  {{#each runs}}
+    <li><a href="{{pathFor 'run'}}">{{name}}</a></li>
+  {{/each}}
+</ul>
+</template>

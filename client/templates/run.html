@@ -1,0 +1,18 @@
+<template name="run">
+<div class="fc-run">
+  <h2 class="fc-run__title">{{name}}</h2>
+  <div class="fc-run__time">{{formattedTime}}</div>
+  <div class="fc-run__current-interval">{{currentInterval}}</div>
+  <div class="fc-run__controls">
+    <button class="fc-run__toggle"><i class="fa {{toggleStatus}}"></i></button><button class="fc-run__reset"><i class="fa fa-refresh"></i></button>
+  </div>
+  <ul class="fc-run__intervals">
+  {{#each intervals}}
+    <li class="fc-run__interval">
+      <span class="fc-run__interval__name">{{name}}</span>
+      <span class="fc-run__interval__time">{{formattedTime}}</span>
+    </li>
+  {{/each}}
+  </ul>
+</div>
+</template>
