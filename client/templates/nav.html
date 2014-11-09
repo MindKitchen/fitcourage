@@ -1,0 +1,32 @@
+<template name="nav">
+<div class="fc-nav navbar navbar-default">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="{{pathFor 'home'}}">FitCourage</a>
+  </div>
+  <div class="navbar-collapse collapse navbar-responsive-collapse">
+    <ul class="nav navbar-nav">
+      <li><a href="{{pathFor 'home'}}">Workout Plans</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      {{#unless currentUser}}
+        <li><a class="fc-nav__login" href="{{pathFor 'login'}}">Login</a></li>
+      {{else}}
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">{{name}} <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="{{pathFor 'user-profile'}}">View/Edit Profile</a></li>
+            <li class="divider"></li>
+            <li><a class="fc-nav__logout" href="{{pathFor 'logout'}}">Sign Out</a></li>
+          </ul>
+        </li>
+      {{/unless}}
+      <!--<li>{{> loginButtons align="right"}}</li>-->
+    </ul>
+  </div>
+</div>
+</template>

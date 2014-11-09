@@ -1,0 +1,74 @@
+@mixin fa-basics()
+  float: left
+  display: inline-block
+  font: normal normal normal 14px/1 FontAwesome
+  font-size: inherit
+  text-rendering: auto
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+.fc-run
+  position: relative
+
+  &__title
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5)
+    font-size: 1.67em
+    padding-left: 0.5em
+    padding-bottom: 0.67em
+    margin-bottom: 0.67em
+
+  &__time
+    font-size: 1.5em
+    text-align: right
+    padding: 0 0.5em
+
+    &:before
+      content: "\f017"
+      @include fa-basics()
+
+  &__current-interval
+    font-size: 1.5em
+    padding: 0.5em
+    text-align: right
+
+    &:before
+      content: "\f135"
+      @include fa-basics()
+
+  &__controls
+    border-top: 1px solid rgba(0, 0, 0, 0.5)
+
+    button
+      border: 0
+      padding: 1em 0
+      width: 50%
+
+      &:first-of-type
+        border-right: 1px solid rgba(0, 0, 0, 0.5)
+
+      &:focus
+        outline: none
+
+    i
+      font-size: 2em
+
+  &__intervals
+    border-top: 1px solid rgba(0, 0, 0, 0.5)
+    list-style: none
+    height: 16em
+    padding: 0
+    margin: 0
+    overflow: auto
+
+  &__interval
+    font-size: 1.33em
+    padding: 0.5em
+
+    &:nth-of-type(2n + 1)
+      background: rgba(0, 0, 0, 0.2)
+
+    &:nth-of-type(2n + 2)
+      background: rgba(0, 0, 0, 0.1)
+
+    &__time
+      float: right

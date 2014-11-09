@@ -4,7 +4,6 @@
 # but you can also edit it by hand.
 
 meteor-platform
-chrismbeckett:fontawesome4
 accounts-password
 alanning:roles
 iron:router
@@ -13,4 +12,8 @@ mrt:moment
 mrt:numeral
 fourseven:scss
 waitingkuo:normalize
+chrismbeckett:fontawesome4
 ovcharik:howler
+html5cat:bootstrap-material-design
+accounts-twitter
+service-configuration

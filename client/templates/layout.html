@@ -1,7 +1,13 @@
 <template name="layout">
-  {{> header}}
+  {{> nav}}
   <div id="fitcourage">
     {{> yield}}
   </div>
   {{> footer}}
+</template>
+
+<template name="layout-basic">
+  <div id="fitcourage">
+    {{> yield}}
+  </div>
 </template>

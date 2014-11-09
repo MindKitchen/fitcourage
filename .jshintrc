@@ -29,7 +29,11 @@
       "Template": false,
       "Handlebars": false,
       "UI": false,
+      "_": false,
 
+      "ServiceConfiguration": false,
+
+      "GAnalytics": false,
       "Howl": false,
 
       "Run": false,
