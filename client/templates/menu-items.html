@@ -1,0 +1,15 @@
+<template name="menuItems">
+  <div class="slideout-menu">
+    <h3>Menu <a href="#" class="slideout-menu-toggle">&times;</a></h3>
+    <ul>
+      <li><a href="{{pathFor 'home'}}">Workout Plans <i class="fa fa-angle-right"></i></a></li>
+      <li class="divider"></li>
+      {{#if currentUser}}
+      <li><a href="{{pathFor 'user-profile'}}">View/Edit Profile</a></li>
+      <li><a class="fc-nav__logout" href="{{pathFor 'logout'}}">Sign Out</a></li>
+      {{else}}
+      <li class="fc-nav__login"><a href="{{pathFor 'login'}}">Sign In</a></li>
+      {{/if}}
+    </ul>
+  </div>
+</template>
