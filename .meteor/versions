@@ -13,6 +13,7 @@ boilerplate-generator@1.0.1
 callback-hook@1.0.1
 check@1.0.2
 chrismbeckett:fontawesome4@4.2.2
+coffeescript@1.0.4
 ctl-helper@1.0.4
 ctl@1.0.2
 datariot:ganalytics@0.2.0
@@ -64,6 +65,7 @@ reactive-var@1.0.3
 reload@1.1.1
 retry@1.0.1
 routepolicy@1.0.2
+sacha:spin@2.0.4
 service-configuration@1.0.2
 session@1.0.4
 sha@1.0.1
@@ -79,3 +81,5 @@ url@1.0.2
 waitingkuo:normalize@0.1.0
 webapp-hashing@1.0.1
 webapp@1.1.4
+wizonesolutions:underscore-string@1.0.0
+zimme:iron-router-active@1.0.1
