@@ -36,6 +36,7 @@ Template.run.helpers({
 
       if (this.time === t) {
         (new Howl({ urls: [ "/sounds/alert.mp3", "/sounds/alert.ogg" ] })).play();
+        navigator.vibrate(1000);
       }
     }
 
